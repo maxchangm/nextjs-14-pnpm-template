@@ -2,6 +2,12 @@
   "name": "nextjs-14-template",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=18.17.0",
+    "npm": "Please use pnpm for this repo.",
+    "yarn": "Please use pnpm for this repo.",
+    "pnpm": ">=8.15.5"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,9 +16,13 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "lucide-react": "^0.360.0",
     "next": "14.1.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "tailwind-merge": "^2.2.2"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^14.1.4",
