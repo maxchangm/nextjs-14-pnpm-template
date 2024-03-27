@@ -1,48 +1,58 @@
 {
-  "name": "nextjs-14-template",
-  "version": "0.1.0",
-  "private": true,
-  "engines": {
-    "node": ">=18.17.0",
-    "npm": "Please use pnpm for this repo.",
-    "yarn": "Please use pnpm for this repo.",
-    "pnpm": ">=8.15.5"
-  },
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "prepare": "husky"
-  },
-  "dependencies": {
-    "@t3-oss/env-nextjs": "^0.9.2",
-    "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.0",
-    "dotenv": "^16.4.5",
-    "lucide-react": "^0.360.0",
-    "next": "14.1.4",
-    "react": "^18",
-    "react-dom": "^18",
-    "tailwind-merge": "^2.2.2",
-    "zod": "^3.22.4"
-  },
-  "devDependencies": {
-    "@next/eslint-plugin-next": "^14.1.4",
-    "@tailwindcss/typography": "^0.5.10",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "@typescript-eslint/eslint-plugin": "^7.3.1",
-    "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.1.4",
-    "eslint-config-prettier": "^9.1.0",
-    "husky": "^9.0.11",
-    "postcss": "^8",
-    "prettier-plugin-tailwindcss": "^0.5.12",
-    "tailwindcss": "^3.3.0",
-    "tailwindcss-animate": "^1.0.7",
-    "typescript": "^5"
-  }
+	"name": "nextjs-14-template",
+	"version": "0.1.0",
+	"private": true,
+	"engines": {
+		"node": ">=18.17.0",
+		"npm": "Please use pnpm for this repo.",
+		"yarn": "Please use pnpm for this repo.",
+		"pnpm": ">=8.15.5"
+	},
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"prepare": "husky",
+		"push": "drizzle-kit push:pg",
+		"pull": "drizzle-kit introspect:pg ",
+		"generate": "drizzle-kit generate:pg",
+		"drop": "drizzle-kit drop",
+		"check": "drizzle-kit check:pg",
+		"up": "drizzle-kit up:pg",
+		"studio": "pnpx drizzle-kit studio"
+	},
+	"dependencies": {
+		"@t3-oss/env-nextjs": "^0.9.2",
+		"class-variance-authority": "^0.7.0",
+		"clsx": "^2.1.0",
+		"dotenv": "^16.4.5",
+		"drizzle-orm": "^0.30.5",
+		"lucide-react": "^0.360.0",
+		"next": "14.1.4",
+		"postgres": "^3.4.4",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"tailwind-merge": "^2.2.2",
+		"zod": "^3.22.4"
+	},
+	"devDependencies": {
+		"@next/eslint-plugin-next": "^14.1.4",
+		"@tailwindcss/typography": "^0.5.12",
+		"@types/node": "^20.11.30",
+		"@types/react": "^18.2.73",
+		"@types/react-dom": "^18.2.22",
+		"@typescript-eslint/eslint-plugin": "^7.4.0",
+		"autoprefixer": "^10.4.19",
+		"drizzle-kit": "^0.20.14",
+		"eslint": "^8.57.0",
+		"eslint-config-next": "14.1.4",
+		"eslint-config-prettier": "^9.1.0",
+		"husky": "^9.0.11",
+		"postcss": "^8.4.38",
+		"prettier-plugin-tailwindcss": "^0.5.13",
+		"tailwindcss": "^3.4.3",
+		"tailwindcss-animate": "^1.0.7",
+		"typescript": "^5.4.3"
+	}
 }
